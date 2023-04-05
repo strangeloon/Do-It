@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f3f3f"
+    android:textColor="@android:color/white"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/taskEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#3f3f3f"
+        android:hint="Add a task"
+        android:textColor="@android:color/white"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <ListView
+        android:id="@+id/tasksListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/taskEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#3f3f3f"
+        android:textColor="@android:color/holo_orange_light"
+        android:choiceMode="multipleChoice"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded_corners"
+        android:text="Add"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:backgroundTint="#5865F1" />
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/addButton"
+        android:layout_alignBottom="@id/addButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="167dp"
+        android:layout_marginEnd="16dp"
+
+        android:background="@android:color/transparent"
+        android:enabled="true"
+        android:text="Remove"
+        android:textColor="#727C8E"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
